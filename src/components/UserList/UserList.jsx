@@ -20,14 +20,13 @@ function UserList({ users }) {
     return (
         <div className="user_list">
             { users.map(user => {
-                return <User user={user} key={user.id.value} />
+                return <User user={user} key={user.id.value + Math.random().toString()} />
             })}
         </div>
     )
 }
 
 const mapStateToProps = state => {
-    console.log(state.users.users)
     return {
         users: state.users.users,
     }
