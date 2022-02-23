@@ -1,0 +1,28 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 5px ;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.card:hover {
+    box-shadow: 0px 3px rgba(151, 151, 151, 0.2);
+}
+
+.card span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card h5 {
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+.card:nth-child(5n) {
+    margin-right: 0px;
+}
